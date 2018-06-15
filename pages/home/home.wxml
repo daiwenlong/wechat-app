@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+   <view class="swiper-container" style='height:40px;'>
+        
+   </view>
+    <view class="search-view" style="background:{{ scrollTop === 0 ?'-webkit-linear-gradient(top, rgba(105,195,170, 1), rgba(105,195,170, 0.3))' :( scrollTop<200 ? 'rgba(105,195,170,'+(scrollTop/400+0.3) +')' : 'rgba(105,195,170,1)')  }} ">
+    <view class="search-content">
+      <image src="/images/search-pic.png" class="search-icon" />
+      <input placeholder="请输入搜索内容" class="search-input" maxlength="30" confirm-type="搜索" bindinput='listenerSearchInput' bindconfirm='toSearch'>
+      </input>
+      <button class='search-btn' bindtap="toSearch">搜索
+      </button>
+    </view>
+  </view>
+    
+  
+        <view class="My-MainThree" wx:for-items="{{list}}" wx:key="{{index}}" bindtap="btn" data-id="{{item.id}}">
+          <text>{{item.name}}</text>
+           <image src='/image/right.png'></image>   
+              <text style='font-size:13px; float: right;'>{{item.time}}</text>
+                
+        </view>
+        
+ 
+    <view  class="no-more-goods">没有更多啦</view>
+</view>

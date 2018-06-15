@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/my/my",
+    "pages/home-details/home-details",
+    "pages/cart/cart"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405F80",
+    "navigationBarTitleText": "药材发布平台"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#405F80",
+    "borderStyle": "#CECECE",
+    "list": [
+      {
+        "selectedIconPath": "image/3.1首页-选中.png",
+        "iconPath": "image/3.1首页.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/3.1购物车-选中.png",
+        "iconPath": "image/3.1购物车.png",
+        "pagePath": "pages/cart/cart",
+        "text": "收藏"
+      },
+      {
+        "selectedIconPath": "image/3.1我的-选中.png",
+        "iconPath": "image/3.1我的.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

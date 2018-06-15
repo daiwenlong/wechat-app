@@ -1,0 +1,32 @@
+<view class='cartMain'>
+    <view wx:for="{{cartItems}}">
+        <view data-id="{{item.id}}"  class='cart-box' data-index="{{index}}">
+           
+
+            <view class='cart_main'>
+              <view class='left' style="padding-top:25rpx;padding-left:20rpx;">
+              
+                 
+                <text>{{item.name}}</text>
+         
+              <text style='font-size:13px; float: right;'>{{item.time}}</text>
+              </view>
+
+              <view class='right'>
+                  <image src='/image/删除.png' bindtap='shanchu' data-index="{{index}}"></image>
+              </view>
+            </view>
+
+          
+            <!-- 底部 -->
+            <view class="cart-bottom">
+             
+
+           
+               
+
+             
+            </view>
+          </view>
+      </view>
+</view>

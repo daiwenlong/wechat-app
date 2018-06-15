@@ -1,0 +1,42 @@
+<view id='box'>
+ 
+
+  <view class='box'>
+      <text class='title'>药材名称：</text>
+      <text class='title' style="float: right;">{{data.name}}</text>
+  </view>
+   <view class='box'>
+      <text class='title'>药材类别：</text>
+      <text class='title' style="float: right;">{{data.type}}</text>
+  </view>
+   <view class='box'>
+      <text class='title'>药材备注：</text>
+      <text class='title' style="float: right;">{{data.remarks}}</text>
+  </view>
+   <view class='box'>
+      <text class='title'>药材数量：</text>
+      <text class='title' style="float: right;">{{data.number}}</text>
+  </view>
+ 
+   <view class='box'>
+      <text class='title'>发布时间：</text>
+      <text class='title' style="float: right;">{{data.time}}</text>
+  </view>
+  
+  
+ 
+
+  <view class='dibu'>
+    
+    <view class='right'>
+        <text class='text' bindtap="addcart" data-id="{{data.id}}"
+         data-name="{{data.name}}"
+          data-type="{{data.type}}"
+           data-numder="{{data.number}}"
+            data-remarks="{{data.remarks}}"
+             data-time="{{data.time}}"
+        
+        >立即收藏</text>
+    </view>
+  </view>
+</view>
